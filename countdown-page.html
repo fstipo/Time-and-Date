@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time and Date</title>
+    <!-- <link rel="icon" type="image/svg" sizes="" href="/images/64x64.png"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="index__page">
+
+    <header>
+        <a href="/index.html"> <img src="/images/logo.png" alt="" class="logo"></a>
+        <div class="nav">
+            <a class="active" href="/index.html">Home</a>
+            <a href="#news">Stopwatch</a>
+            <a href="/countdown-page.html">Countdown</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="clock">
+            <h2 class="spacer">Countdown Timer</h2>
+            <div class="time">
+                <div><span class="days">00</span><span>Days</span></div>
+                <div><span class="hours">00</span><span>Hours</span></div>
+                <div><span class="minutes">00</span><span>Minutes</span></div>
+                <div><span class="seconds">00</span><span>Seconds</span></div>
+            </div>
+            <div>
+                <p class="selected__date">Time until <span>selected time</span></p>
+                <p>Today: <span>današnji datum</span></p>
+                <label for="">select date:</label>
+                <input type="date" name="" id="">
+            </div>
+
+            <div class="btns">
+                <button type="button">select</button>
+                <button type="button">stop</button>
+            </div>
+
+        </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
