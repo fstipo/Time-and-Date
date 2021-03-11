@@ -19,11 +19,3 @@ const time = () => {
     document.querySelector(domStrings.s).innerHTML = seconds;
 };
 setInterval(time, 1000);
-
-/*************************************************
- *** countdown timer
- */
-
-
-// document.querySelector(domStrings.today).innerHTML = now;
-// // document.querySelector()
