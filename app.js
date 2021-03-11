@@ -6,7 +6,8 @@ const domStrings = {
     h: '.hours',
     m: '.minutes',
     s: '.seconds',
-}
+    today: '.today'
+};
 
 const time = () => {
     const now = new Date();
@@ -18,3 +19,11 @@ const time = () => {
     document.querySelector(domStrings.s).innerHTML = seconds;
 };
 setInterval(time, 1000);
+
+/*************************************************
+ *** countdown timer
+ */
+
+
+// document.querySelector(domStrings.today).innerHTML = now;
+// // document.querySelector()
