@@ -208,3 +208,12 @@ header .nav {
 .btns {
     text-align: center;
 }
+
+.active {
+    border-bottom: 2px solid var(--clr-accent-200);
+}
+
+.output_date {
+    font-size: 26px;
+    color: var(--clr-accent-200);
+}
