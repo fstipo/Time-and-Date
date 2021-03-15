@@ -16,18 +16,29 @@ const domStrings = {
 };
 let timeInterval;
 let timeStop = true;
-
+let savedValue = localStorage.getItem("countdown");
+console.log(savedValue)
+if (savedValue) {
+    let temp = localStorage.getItem('countdown');
+    // startClock(temp);//localStorage
+    console.log('zašto ne radiš?')
+};
 
 // change date
 
+
 const changeDate = document.querySelector(domStrings.endDate);
 changeDate.addEventListener('change', (e) => {
+    e.preventDefault();
     clearInterval(timeInterval);
-    temp = changeDate.value
-    temp = new Date(temp);
-    startClock(temp);
+    let temp = new Date(e.target.value);
+    console.log(temp);
+    localStorage.setItem('countdown', temp);
+    changeDate.value = e.target.value;
     timeStop = false;
+    startClock(temp);
 });
+
 
 
 // function format date
@@ -43,7 +54,7 @@ const formatDate = (d) => {
     return (`${day}, ${date} ${month} ${year}`)
 };
 
-startClock = (d) => {
+const startClock = (d) => {
     let updateCounter = () => {
         let tl = timeLeft(d);
         if (tl.total <= 0) {
@@ -63,7 +74,7 @@ startClock = (d) => {
     }
 }
 
-timeLeft = (d) => {
+const timeLeft = (d) => {
     endDate = formatDate(d);
     const now = new Date();
     const today = formatDate(now);
