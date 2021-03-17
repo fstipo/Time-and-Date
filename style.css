@@ -145,6 +145,37 @@ h2 {
     background-color: var(--clr-neutral-200);
 }
 
+/* .time,
+.stopwatch {
+    margin-top: -200px;
+} */
+
+/* .stopwatch-heading {
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+} */
+
+.stopwatch span {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-neutral-900);
+    font-weight: var(--fw-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    box-shadow: 0 0 0 1px var(--clr-neutral-900);
+}
+
+.stopwatch div span:nth-child(2) {
+    height: 30px;
+    font-size: 0.7em;
+    font-weight: var(--fw-600);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: var(--clr-neutral-200);
+}
+
 .spacer {
     padding-top: 1.25em;
 }
@@ -157,16 +188,38 @@ h2 {
 button {
     color: var(--clr-accent-900);
     font-weight: var(--fw-700);
-    background-color: var(--clr-neutral-900);
+    background-color: transparent;
     font-size: var(--fs-300);
-    border-radius: 4px;
-    padding: 14px;
+    border-radius: 5px;
+
+
+    /* padding: 14px; */
     margin-top: 20px;
+    margin-right: 15px;
     border: none;
     border: 1px dotted var(--clr-accent-200);
     text-transform: uppercase;
+    outline: none;
 }
 
+button:hover,
+button:focus {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-neutral-400);
+    border: none;
+}
+
+.start,
+.reset {
+    width: 150px;
+    height: 40px;
+}
+
+.lap {
+    width: 310px;
+    height: 40px;
+
+}
 
 
 header {

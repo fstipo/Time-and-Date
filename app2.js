@@ -18,11 +18,11 @@ let timeInterval;
 let timeStop = true;
 let savedValue = localStorage.getItem("countdown");
 console.log(savedValue)
-if (savedValue) {
-    let temp = localStorage.getItem('countdown');
-    // startClock(temp);//localStorage
-    console.log('zašto ne radiš?')
-};
+// if (savedValue) {
+//     let temp = localStorage.getItem('countdown');
+//     // startClock(temp);//localStorage
+//     console.log('zašto ne radiš?')
+// };
 
 // change date
 
@@ -67,7 +67,7 @@ const startClock = (d) => {
         document.querySelector(domStrings.cs).innerHTML = tl.seconds;
     }
     updateCounter();
-    if (timeStop) {
+    if (!timeStop) {
         timeInterval = setInterval(updateCounter, 1000);
     } else {
         clearInterval(timeInterval);
