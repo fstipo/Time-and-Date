@@ -1,43 +1,40 @@
 :root {
-    --ff-serif: "'Karma', serif";
-    --ff-sans: 'Montserrat', sans-serif;
+  --ff-serif: "'Karma', serif";
+  --ff-sans: 'Montserrat', sans-serif;
 
+  /* small screen font-sizes */
+  --fs-200: 0.75rem;
+  --fs-300: 1rem;
+  --fs-400: 1.25rem;
+  --fs-500: 1.375rem;
+  --fs-900: 2.5rem;
 
-    /* small screen font-sizes */
-    --fs-200: 0.75rem;
-    --fs-300: 1rem;
-    --fs-400: 1.25rem;
-    --fs-500: 1.375rem;
-    --fs-900: 2.5rem;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-900: 900;
 
+  --clr-neutral-100: #b6eaeb;
+  --clr-neutral-200: #32e5e6;
+  --clr-neutral-400: #0b9899;
+  --clr-neutral-900: #062a2b;
 
-    --fw-200: 200;
-    --fw-300: 300;
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-600: 600;
-    --fw-700: 700;
-    --fw-900: 900;
+  --clr-accent-200: #37e61c;
+  --clr-accent-400: #e74739;
+  --clr-accent-900: #e63727;
 
-    --clr-neutral-100: #b6eaeb;
-    --clr-neutral-200: #32E5E6;
-    --clr-neutral-400: #0B9899;
-    --clr-neutral-900: #062A2B;
-
-
-    --clr-accent-200: #37e61c;
-    --clr-accent-400: #e74739;
-    --clr-accent-900: #E63727;
-
-    --br: 1rem;
+  --br: 1rem;
 }
 
 @media (min-width: 50em) {
-    :root {
-        --fs-500: 1.75rem;
-        --fs-600: 2.125rem;
-        --fs-900: 3.625rem;
-    }
+  :root {
+    --fs-500: 1.75rem;
+    --fs-600: 2.125rem;
+    --fs-900: 3.625rem;
+  }
 }
 
 /* reset */
@@ -45,7 +42,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -56,7 +53,7 @@ h3,
 .h3,
 h4,
 .h4 {
-    line-height: 1;
+  line-height: 1;
 }
 
 body,
@@ -67,82 +64,74 @@ p,
 dl,
 dd,
 figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
 body {
-    line-height: 1.3;
-    background-color: var(--clr-neutral-900);
-    color: var(--clr-neutral-100);
-    font-family: var(--ff-serif);
-    font-size: var(--fs-400);
-
+  line-height: 1.3;
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-serif);
+  font-size: var(--fs-400);
 }
 
 /* typography */
 
 h2 {
-    font-size: var(--fs-500);
-    font-family: var(--ff-serif);
-    font-weight: var(--fw-400);
-    text-transform: uppercase;
-    letter-spacing: 0.4em;
-    text-align: center;
-    color: var(--clr-neutral-100);
+  font-size: var(--fs-500);
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-400);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  text-align: center;
+  color: var(--clr-neutral-100);
 }
-
-
 
 /*section*/
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .clock {
-    margin-top: 10px;
+  margin-top: 10px;
 }
-
 
 .clock .time {
-    display: flex;
-    margin-top: 20px;
-
+  display: flex;
+  margin-top: 20px;
 }
 
-
 .clock .time div {
-    /* position: relative; */
-    margin: 0 5px;
-
+  /* position: relative; */
+  margin: 0 5px;
 }
 
 .clock .time span {
-    position: relative;
-    width: 100px;
-    height: 80px;
-    background-color: var(--clr-neutral-100);
-    color: var(--clr-neutral-900);
-    font-weight: var(--fw-700);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    z-index: 10;
-    box-shadow: 0 0 0 1px var(--clr-neutral-900);
+  position: relative;
+  width: 100px;
+  height: 80px;
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  z-index: 10;
+  box-shadow: 0 0 0 1px var(--clr-neutral-900);
 }
 
 .clock .time div span:nth-child(2) {
-    height: 30px;
-    font-size: 0.7em;
-    font-weight: var(--fw-600);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    background-color: var(--clr-neutral-200);
+  height: 30px;
+  font-size: 0.7em;
+  font-weight: var(--fw-600);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--clr-neutral-200);
 }
 
 /* .time,
@@ -157,122 +146,118 @@ h2 {
 } */
 
 .stopwatch span {
-    background-color: var(--clr-neutral-100);
-    color: var(--clr-neutral-900);
-    font-weight: var(--fw-700);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    box-shadow: 0 0 0 1px var(--clr-neutral-900);
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  box-shadow: 0 0 0 1px var(--clr-neutral-900);
 }
 
 .stopwatch div span:nth-child(2) {
-    height: 30px;
-    font-size: 0.7em;
-    font-weight: var(--fw-600);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    background-color: var(--clr-neutral-200);
+  height: 30px;
+  font-size: 0.7em;
+  font-weight: var(--fw-600);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--clr-neutral-200);
 }
 
 .spacer {
-    padding-top: 1.25em;
+  padding-top: 1.25em;
 }
 
 .nav {
-    text-align: center;
-
+  text-align: center;
 }
 
 button {
-    color: var(--clr-accent-900);
-    font-weight: var(--fw-700);
-    background-color: transparent;
-    font-size: var(--fs-300);
-    border-radius: 5px;
+  color: var(--clr-accent-900);
+  font-weight: var(--fw-700);
+  background-color: transparent;
+  font-size: var(--fs-300);
+  border-radius: 5px;
 
-
-    /* padding: 14px; */
-    margin-top: 20px;
-    margin-right: 15px;
-    border: none;
-    border: 1px dotted var(--clr-accent-200);
-    text-transform: uppercase;
-    outline: none;
+  /* padding: 14px; */
+  margin-top: 20px;
+  margin-right: 15px;
+  border: none;
+  border: 1px dotted var(--clr-accent-200);
+  text-transform: uppercase;
+  outline: none;
 }
 
 button:hover,
 button:focus {
-    background-color: var(--clr-neutral-100);
-    color: var(--clr-neutral-400);
-    border: none;
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-400);
+  border: none;
 }
 
 .start,
 .reset {
-    width: 150px;
-    height: 40px;
+  width: 150px;
+  height: 40px;
 }
 
 .lap {
-    width: 310px;
-    height: 40px;
-
+  width: 310px;
+  height: 40px;
 }
 
-
 header {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    margin-top: 15px;
-    margin-left: 15px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 header .nav {
-    position: relative;
-    background-color: var(--clr-neutral-900);
-    text-align: center;
-    z-index: 2;
-    align-items: center;
+  position: relative;
+  background-color: var(--clr-neutral-900);
+  text-align: center;
+  z-index: 2;
+  align-items: center;
 }
 
 .nav a {
-    color: var(--clr-neutral-100);
-    text-decoration: none;
-    font-size: var(--fs-500);
-    font-weight: var(--fw-400);
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-400);
 
-    /* display: inline-block; */
-    text-transform: uppercase;
-    padding: 10px;
-    font-family: serif;
+  /* display: inline-block; */
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: serif;
 }
 
 .selected__date {
-    margin: 10px 10px;
-    text-align: center;
-    font-size: var(--fs-600);
-    background-color: var(--clr-neutral-400);
-    color: var(--clr-neutral-100);
+  margin: 10px 10px;
+  text-align: center;
+  font-size: var(--fs-600);
+  background-color: var(--clr-neutral-400);
+  color: var(--clr-neutral-100);
 }
 
 .btns {
-    text-align: center;
+  text-align: center;
 }
 
 .active {
-    border-bottom: 2px solid var(--clr-accent-200);
+  border-bottom: 2px solid var(--clr-accent-200);
 }
 
 .output_date {
-    font-size: 26px;
-    color: var(--clr-accent-200);
+  font-size: 26px;
+  color: var(--clr-accent-200);
 }
 
 li {
-    font-size: 24px;
-    border-bottom: 1px solid var(--clr-neutral-200);
-    margin-bottom: 5px;
+  font-size: 24px;
+  border-bottom: 1px solid var(--clr-neutral-200);
+  margin-bottom: 5px;
 }
